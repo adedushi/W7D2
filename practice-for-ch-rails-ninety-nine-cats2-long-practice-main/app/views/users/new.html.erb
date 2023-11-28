@@ -1,0 +1,14 @@
+<h1>Welcome to the jungle</h1>
+
+
+<h2>Sign in</h2>
+
+<form action="<%= users_url%>" method="post">
+    <label for="username">Username
+        <input type="text" id="username" name="user[username]" value="<%= @user.username%>">
+    </label>
+    <label for="password">Password
+        <input type="password" id="password" name="user[password]" value="">
+    </label>
+    <input type="submit" value="Sign in">
+</form>
